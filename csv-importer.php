@@ -34,7 +34,7 @@ if (($handle = fopen($nomeCsv, "r")) !== FALSE) {
 
         adicionaEmail($data[5], $idPessoa);
         adicionaTelefone($data[4], $idPessoa);
-        registraPresencaEvento($data[11], $idPessoa, $data[16]);
+        registraPresencaEvento($data[11], $idPessoa, $data[12]);
         $idInstituicao = verificaInstituicaoExiste($data[9], $data[8]);
         if($idInstituicao == 0){
             $idInstituicao = adicionaInstituicao($data[9], $data[8], $data[7]);
